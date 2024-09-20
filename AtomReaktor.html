@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomreaktor Szimulátor</title>
+</head>
+<body>
+    <div class="kontener">
+        <h1>Atomreaktor Szimulátor</h1>
+        <p>Reaktor státusz: <span id="reaktorStatusz">Leállítva</span></p>
+        <p>Hőmérséklet: <span id="homerseklet">-</span> °C</p>
+        <p>Generált energia: <span id="energia">-</span> GW</p>
+
+        <button id="reaktorInditasGomb">Reaktor beindítása</button>
+        <button id="reaktorLeallitasGomb" disabled>Reaktor leállítása</button>
+        <button id="hutovizGomb" disabled>Hűtővíz beengedése</button>
+    </div>
+
+    <script src="AtomReaktor.js"></script>
+</body>
+</html>

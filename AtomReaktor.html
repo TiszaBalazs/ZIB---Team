@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atomreaktor Szimulátor</title>
+    <link rel="stylesheet" href="AtomReaktor.css">
 </head>
 <body>
     <div class="kontener">
         <h1>Atomreaktor Szimulátor</h1>
-        <p>Reaktor státusz: <span id="reaktorStatusz">Leállítva</span></p>
-        <p>Hőmérséklet: <span id="homerseklet">-</span> °C</p>
-        <p>Generált energia: <span id="energia">-</span> GW</p>
-
-        <button id="reaktorInditasGomb">Reaktor beindítása</button>
-        <button id="reaktorLeallitasGomb" disabled>Reaktor leállítása</button>
-        <button id="hutovizGomb" disabled>Hűtővíz beengedése</button>
+        
+        <div class="statusz-szekcio">
+            <p>Reaktor státusz: <span id="reaktorStatusz">Leállítva</span></p>
+        </div>
+    
+        <div class="szenzorok-szekcio">
+            <p>Hőmérséklet: <span id="homerseklet">-</span> °C</p>
+            <div class="progress">
+                <div id="homersekletSzalag" class="progress-bar"></div>
+            </div>
+    
+            <p>Generált energia: <span id="energia">-</span> GW</p>
+            <div class="progress">
+                <div id="energiaSzalag" class="progress-bar"></div>
+            </div>
+        </div>
+    
+        <div class="gombok-szekcio">
+            <button id="reaktorInditasGomb">Reaktor beindítása</button>
+            <button id="reaktorLeallitasGomb" disabled>Reaktor leállítása</button>
+            <button id="hutovizGomb" disabled>Hűtővíz beengedése</button>
+        </div>
+        
     </div>
-
-    <script src="AtomReaktor.js"></script>
+    <script src="AtomReaktor.js"></script>   
 </body>
 </html>
